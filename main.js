@@ -332,8 +332,6 @@ $(function() {
 
     var myArray = [1,"macchina",3,"casa","hotel",6,"fabio","boolean","Roma",10];
     var newArray = [];
-    var a = 5;
-    var b = 8;
 
     function myFunction (a,b,array){
         if(a<b && b<=myArray.length){
