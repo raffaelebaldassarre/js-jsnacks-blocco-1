@@ -308,7 +308,7 @@ $(function() {
     elementi da uno e dall’altro
     es. [a,b,c], [1,2,3] → [a,1,b,2,c,3]. */
 
-    var letters = ["a","b","c","d","e","f"];
+   /*  var letters = ["a","b","c","d","e","f"];
     var numbers = [1,2,3,4,5,6];
     var lettersNumbers = [];
 
@@ -321,7 +321,31 @@ $(function() {
     }
     joinAlternative(letters,numbers);
 
-    console.log(lettersNumbers);
+    console.log(lettersNumbers); */
+
+    //////////////JSnack 5////////////////////
+    /* Scrivi una funzione che accetti tre argomenti:
+    un array e due numeri (“a” più piccolo di “b” e “b” grande al
+    massimo quanto il numero di elementi dell’array).
+    La funzione ritornerà un nuovo array con i valori che
+    hanno la posizione compresa tra “a” e “b” */
+
+    var myArray = [1,"macchina",3,"casa","hotel",6,"fabio","boolean","Roma",10];
+    var newArray = [];
+    var a = 5;
+    var b = 8;
+
+    function myFunction (a,b,array){
+        if(a<b && b<=myArray.length){
+            for(var i=a;i<b;i++){
+                newArray.push(array[i]);
+            }
+        }
+    }
+
+    myFunction(a,b,myArray)
+    console.log(newArray);
+
     
 
 
